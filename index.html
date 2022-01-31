@@ -20,32 +20,32 @@
 <body>
   <!-- -------- Шапка -------- -->
   <header>
-    <div class="header-flex container">
+    <div class="container header__container">
       <nav class="nav">
-        <a href="index.html" class="link logo"><span class="logo-accent">Web</span>Studio</a>
-        <ul class="list nav-list">
-          <li class="nav-list-item">
-            <a href="./index.html" class="current nav-list-link link">Студия</a>
+        <a href="index.html" class="logo">Web<span class="nav__logo">Studio</span></a>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="./index.html" class="nav-list__current nav-list__link">Студия</a>
           </li>
-          <li class="nav-list-item">
-            <a href="./portfolio.html" class="nav-list-link link">Портфолио</a>
+          <li class="nav-list__item">
+            <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
           </li>
-          <li class="nav-list-item">
-            <a href="" class="nav-list-link link">Контакты</a>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="list header-contacts-list">
-        <li class="hcl-item">
-          <a href="mailto:info@devstudio.com" class="link nav-contacts" lang="en">
+      <ul class="header-contacts-list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="nav-contacts" lang="en">
             <svg class="nav-icon" width="16" height="12">
               <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
-        <li class="hcl-item">
-          <a href="tel:+380961111111" class="link nav-contacts">
+        <li class="header-contacts-list__item--margin">
+          <a href="tel:+380961111111" class="nav-contacts">
             <svg class="nav-icon" width="10" height="16">
               <use href="./images/svg/symbol-defs.svg#icon-smartphone" width="10px" height="16px"></use>
             </svg>
@@ -59,17 +59,17 @@
   <main>
     <section class="sec-hero">
       <div class="hero">
-        <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-        <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
+        <h1 class="hero__title">Эффективные решения <br />для вашего бизнеса</h1>
+        <button type="button" class="hero__btn btn" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!----------- index.html/features ----------->
     <section class="section">
       <div class="container">
-        <ul class="list features-list">
-          <li class="features-list-item">
-            <div class="feature-list-icon-bg">
-              <svg class="feature-list-icon">
+        <ul class="features-list">
+          <li class="features-list__item features-list__item--margin">
+            <div class="feature-list__icon-bg feature-list__icon-bg--margin">
+              <svg class="feature-list__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-antenna-1"></use>
               </svg>
             </div>
@@ -78,9 +78,9 @@
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="features-list-item">
-            <div class="feature-list-icon-bg">
-              <svg class="feature-list-icon">
+          <li class="features-list__item features-list__item features-list__item--margin">
+            <div class="feature-list__icon-bg feature-list__icon-bg--margin">
+              <svg class="feature-list__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-clock-1"></use>
               </svg>
             </div>
@@ -89,9 +89,9 @@
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="features-list-item">
-            <div class="feature-list-icon-bg">
-              <svg class="feature-list-icon">
+          <li class="features-list__item features-list__item--margin">
+            <div class="feature-list__icon-bg feature-list__icon-bg--margin">
+              <svg class="feature-list__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-diagram-1"></use>
               </svg>
             </div>
@@ -100,9 +100,9 @@
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li class="features-list-item">
-            <div class="feature-list-icon-bg">
-              <svg class="feature-list-icon">
+          <li class="features-list__item features-list__item--margin">
+            <div class="feature-list__icon-bg feature-list__icon-bg--margin">
+              <svg class="feature-list__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-astronaut-1"></use>
               </svg>
             </div>
@@ -117,26 +117,26 @@
 
     <!------------ index.html/Activities ------------>
 
-    <section class="act-sec section">
-      <div class="container act">
-        <h2 class="act-title">Чем мы занимаемся</h2>
-        <ul class="list act-list">
-          <li class="act-list-item">
+    <section class="section section--activity-padding">
+      <div class="container container-activity">
+        <h2 class="activity-title">Чем мы занимаемся</h2>
+        <ul class="section-list">
+          <li class="act-list__item">
             <img src="./images/box_1.jpg" alt="Первая деятельность" width="370" />
-            <div>
-              <p class="act-list-label">Десктопные приложеня</p>
+            <div class="act-list__overlay">
+              <p class="act-list__label">Десктопные приложеня</p>
             </div>
           </li>
-          <li class="act-list-item">
+          <li class="act-list__item act-list__item--margin">
             <img src="./images/box_2.jpg" alt="Вторая деятельность" width="370" />
-            <div>
-              <p class="act-list-label">Мобильные приложения</p>
+            <div class="act-list__overlay">
+              <p class="act-list__label">Мобильные приложения</p>
             </div>
           </li>
-          <li class="act-list-item">
+          <li class="act-list__item act-list__item--margin">
             <img src="./images/box_3.jpg" alt="Третья деятельность" width="370" />
-            <div>
-              <p class="act-list-label">Дизайнерские решения</p>
+            <div class="act-list__overlay">
+              <p class="act-list__label">Дизайнерские решения</p>
             </div>
           </li>
         </ul>
@@ -145,11 +145,11 @@
 
     <!------------ index.html/Team ------------>
 
-    <section class="team section">
+    <section class="section section--team-bg">
       <div class="container">
-        <h2 class="team-title">Наша команда</h2>
-        <ul class="list team-list">
-          <li class="team-list-item">
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="section-list team-section-list">
+          <li class="team-section-list__item">
             <img src="./images/team-cards/Igor_Dem.jpg" alt="Изображение Игоря Демьяненка" width="270" />
             <div class="team-cards-desc">
               <h3 class="team-names">Игорь Демьяненко</h3>
@@ -319,7 +319,7 @@
     <!-- ----------Clients---------- -->
     <section class="section">
       <div class="container">
-        <h2 class="clients-title">Постоянные клиенты</h2>
+        <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="clients-list list">
           <li class="clients-list-item">
             <a href="google.com" target="_blank" rel="noopener norefferer" class="clients-list-link">
