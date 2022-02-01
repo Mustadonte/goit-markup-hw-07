@@ -4,6 +4,54 @@
   background-color: var(--secondary-bgc);
 
   &__flex {
-    @include centeredflex($vertical: baseline);
+    @include centeredflex(null, $vertical: baseline);
+  }
+}
+
+.footer-adress-list {
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  &--margin {
+    margin-top: 20px;
+  }
+
+  &__item {
+    line-height: 1.71;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-adress {
+  display: block;
+
+  &__link {
+    color: var(--third-tex-color);
+  }
+
+  &__contacts {
+    color: #ffffff99;
+    @include trans(color);
+    &:hover,
+    &:focus {
+      color: var(--third-text-color);
+    }
+  }
+}
+
+.footer-sm {
+  &--wrap {
+    margin-left: 70px;
+  }
+
+  &__title .footer-form__email-sub--label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--third-text-color);
+    text-transform: uppercase;
   }
 }
