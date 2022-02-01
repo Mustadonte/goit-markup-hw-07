@@ -1,3 +1,8 @@
+.team-section-list {
+  display: flex;
+  margin-top: 50px;
+}
+
 .team-section-list__item {
   width: calc((1170px - 90px) / 4);
   background-color: var(--primary-bgc);

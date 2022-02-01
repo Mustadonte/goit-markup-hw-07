@@ -422,9 +422,9 @@ a {
 
 .clients-list__item {
   display: flex;
-  width: calc((100% - 150px) / 6);
   align-items: center;
   justify-content: center;
+  width: calc((100% - 150px) / 6);
 }
 
 .clients-list__item--margin {
