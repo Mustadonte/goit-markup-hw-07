@@ -89,6 +89,10 @@ a {
   color: var(--primary-text-color);
 }
 
+.footer__logo {
+  color: var(--third-text-color);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -546,5 +550,23 @@ a {
 .clients-list__link:hover .clients-list__icon,
 .clients-list__link:focus .clients-list__icon {
   fill: currentColor;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--secondary-bgc);
+}
+
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
 }
 /*# sourceMappingURL=main.css.map */
