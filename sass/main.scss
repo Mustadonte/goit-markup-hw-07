@@ -2,6 +2,7 @@
 @import './base/reset';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/hidden';
 @import './components/container';
 @import './components/logo';
 @import './components/header';
@@ -15,3 +16,5 @@
 @import './components/clients';
 @import './components/footer';
 @import './components/modal';
+@import './components/portfolio-menu';
+@import './components/portfolio-list';
