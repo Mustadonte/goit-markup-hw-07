@@ -3,7 +3,7 @@
 
   &__item {
     @include centeredflex($horisontal: center);
-    width: calc((1170px - 150px) / 6);
+    width: calc((100% - 150px) / 6);
 
     &--margin:not(:last-child) {
       margin-right: 30px;
