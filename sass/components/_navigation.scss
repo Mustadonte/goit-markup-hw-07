@@ -19,8 +19,6 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    padding-top: 16px;
-    padding-bottom: 16px;
     @include trans(color);
 
     &:hover,
@@ -34,13 +32,13 @@
   }
 }
 
-.nav-list__current {
+.nav__current {
   &::after {
     content: '';
     width: 100%;
     height: 4px;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 28px;
     top: 100%;
     left: 50%;
     transform: translate(-50%);
